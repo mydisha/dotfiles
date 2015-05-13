@@ -1,0 +1,39 @@
+mpd_music_dir = "~Music/"
+mpd_crossfade_time = "5"
+
+lyrics_directory="~/.ncmpcpp/lyrics"
+visualizer_in_stereo = no
+visualizer_type = spectrum
+visualizer_look = ▋▋
+visualizer_color = 36,37,38,39,40
+
+playlist_disable_highlight_delay = 2
+message_delay_time = 1
+browser_sort_format = {%l} | {%f}
+
+#selected_item_suffix = $9
+#selected_item_prefix = $6
+#modified_item_prefix = $3> $9
+#now_playing_prefix = "$b"
+#now_playing_suffix = ""
+song_list_format = "$7 {%l} $0│$3 {%t} $8 $R{%a} $8"
+song_status_format = "$8 {%a} $2»»$8 {%t} $2"
+statusbar_visibility = "no"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+
+song_window_title_format = ncmpcpp : {%a - }{%t}
+playlist_display_mode = classic
+browser_display_mode = columns
+progressbar_look = "─╼─"
+startup_screen = playlist
+display_bitrate = yes
+progressbar_color = white
+progressbar_elapsed_color = cyan
+main_window_color = white
+main_window_highlight_color = white
+alternative_ui_separator_color = cyan
+empty_tag_color = default
+header_visibility = no
+titles_visibility = no
+mouse_support = yes

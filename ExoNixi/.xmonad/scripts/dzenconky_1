@@ -1,0 +1,14 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.5
+total_run_times 0
+use_spacer none
+ 
+TEXT
+^bg()^fg(\#d2d2d2)^i(/home/crucia/.xmonad/icons/mt2.xbm)^fg()\
+^bg(\#d2d2d2)^fg(\#2d2d2d)   ^i(/home/crucia/.xmonad/icons/cpu.xbm)   ${cpu cpu0}% ${cpu cpu1}%      \
+^i(/home/crucia/.xmonad/icons/mem.xbm)   ${mem}      \
+^i(/home/crucia/.xmonad/icons/uptime.xbm)   $uptime_short   ^fg()\
+^bg(\#d2d2d2)^fg(\#ff4660)^i(/home/crucia/.xmonad/icons/mt2.xbm)^fg()\
+^bg(\#ff4660) ^i(/home/crucia/.xmonad/icons/clock.xbm)   ${time %a, %d %b %R %p}     \

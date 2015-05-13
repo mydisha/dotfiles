@@ -1,0 +1,28 @@
+background yes
+update_interval 1
+default_color C5C5C5
+alignment bottom_left
+gap_x 28
+gap_y 20
+minimum_size 274
+maximum_width 274
+draw_borders no
+draw_shades no
+default_shade_color 2D2D2D
+own_window yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window_type desktop
+double_buffer yes
+use_xft yes
+xftfont Droid Sans Fallback:size=9
+
+imlib_cache_size 100
+
+TEXT
+${offset 0}${mpd_artist} - ${mpd_title}
+${offset 0}${mpd_bar}
+${offset 0}${mpd_elapsed}/${mpd_length}${alignr}Volume ${mpd_vol}%
+${offset 0}Xmonad Window Manager ${alignr}Arch Linux i686
+

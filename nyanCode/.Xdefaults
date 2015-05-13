@@ -1,0 +1,49 @@
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+
+! special
+*.foreground:   #efefef
+*.background:   #1c574d
+*.cursorColor:  #efefef
+
+! black
+*.color0:       #032c36
+*.color8:       #065f73
+
+! red
+*.color1:       #c2454e
+*.color9:       #ef5847
+
+! green
+*.color2:       #7cbf9e
+*.color10:      #a2d9b1
+
+! yellow
+*.color3:       #8a7a63
+*.color11:      #beb090
+
+! blue
+*.color4:       #2e3340
+*.color12:      #61778d
+
+! magenta
+*.color5:       #ff5879
+*.color13:      #ff99a1
+
+! cyan
+*.color6:       #44b5b1
+*.color14:      #9ed9d8
+
+! white
+*.color7:       #efefef
+*.color15:      #efefef
+
+URxvt*geometry:         83x23
+URxvt*font: xft:Ohsnap:size=8,xft:PragmataPro for Powerline:size=10
+URxvt*boldFont: xft:Ohsnap:size=8,xft:PragmataPro for Powerline:size=10
+URxvt*scrollBar:        false
+URxvt.iconFile: /usr/share/icons/Flattr/apps/scalable/utilities-terminal.svg
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1

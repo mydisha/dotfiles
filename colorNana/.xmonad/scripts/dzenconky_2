@@ -1,0 +1,12 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.5
+total_run_times 0
+use_spacer none
+ 
+TEXT
+^bg(\#8e44ad)   ^i(/home/crucia/.xmonad/icons/music.xbm)   \
+${exec sh /home/crucia/.xmonad/scripts/func_mpc.sh}   \
+^bg(\#27ae60)   ^i(/home/crucia/.xmonad/icons/vol.xbm)   \
+${exec sh /home/crucia/.xmonad/scripts/func_volume.sh}  
