@@ -29,9 +29,9 @@ tryPP h = defaultPP
 	, ppSep		    = ""
     , ppLayout = wrap "^bg(#1166aa)^ca(1,xdotool key alt+space)" "^ca()^bg()" . pad . wrap space space .
     ( \t -> case t of
-    "Spacing 4 Grid"       -> dir_icon ++ "grid.xbm)"
-    "Spacing 4 Tall"       -> dir_icon ++ "sptall.xbm)"
-    "Mirror Spacing 4 Tall"    -> dir_icon ++ "mptall.xbm)"
+    "Spacing 10 Grid"       -> dir_icon ++ "grid.xbm)"
+    "Spacing 10 Tall"       -> dir_icon ++ "sptall.xbm)"
+    "Mirror Spacing 10 Tall"    -> dir_icon ++ "mptall.xbm)"
     "Full"              -> dir_icon ++ "full.xbm)"
     )
 	, ppOrder  = \(ws:l:t:_) -> [l,ws]
@@ -46,13 +46,14 @@ nyanWorkspace = clickable $ [ "^bg(#1177aa)"++ space ++"  Dji  "++ space ++"^bg(
 		(i,ws) <- zip [1..] l,
 		let n = i ]
 
-nyanKeys = [ ((mod1Mask, xK_p), spawn dmenu)
-	, ((mod1Mask, xK_q), spawn "killall dzen2; xmonad --recompile; xmonad --restart")]
+nyanKeys = [ ((mod1Mask, xK_p), spawn dmenu_nyan)
+	, ((mod1Mask, xK_q), spawn "killall dzen2; xmonad --recompile; xmonad --restart")
+	, ((mod1Mask .|. shiftMask, xK_q), spawn powermenu)]
 
 nLayout = avoidStruts $ smartBorders (  sTall ||| Mirror sTall ||| sGrid ||| Full )
 	where
-	 sTall = gaps [(U,20), (D,20), (L,40), (R,40)] $ spacing 4 $ Tall 1 (3/100) (1/2)
-	 sGrid = spacing 4 $ Grid
+	 sTall = gaps [(U,20), (D,20), (L,40), (R,40)] $ spacing 10 $ Tall 1 (3/100) (1/2)
+	 sGrid = spacing 10 $ Grid
 
 nyanDocks = composeAll
 	[ className =? "Gimp" --> doFloat
@@ -77,12 +78,14 @@ main = do
 	 , logHook = nyanLogHook workspacePanel
 	 } `additionalKeys` nyanKeys
 
+screenWidth="1366"
+screenHeight="768"
 space = "    "
 col1 = "#efefef"
 col2 = "#277a6d"
 col3 = "#1188aa"
-screenWidth="1366"
 wBar = "dzen2 -p -ta l -e 'button3=' -fn 'Droid Sans Fallback-8:bold' -fg '" ++ col1 ++ "' -bg '" ++ col2 ++ "' -h 24 -w `expr "++ screenWidth ++" / 2 - 100`"
 iBar = "sh /home/diarifa/.xmonad/assets/bin/panel-info.sh "++ screenWidth
 dir_icon = "^ca(1,xdotool key alt+space)^i(/home/diarifa/.xmonad/assets/xbm/"
-dmenu = "dmenu_run -b -h 24 -l 10 -w 500 -x 433 -y 234 -nb '"++ col2 ++"' -sb '" ++ col3 ++ "'"
+dmenu_nyan = "sh /home/diarifa/.xmonad/assets/bin/dmenu-run.sh '"++ screenWidth ++"' '"++ screenHeight ++"' '"++ col2 ++"' '"++ col3 ++"'"
+powermenu = "sh /home/diarifa/.xmonad/assets/bin/powermenu.sh '"++ screenWidth ++"' '"++ screenHeight ++"' '"++ col2 ++"' '"++ col3 ++"'"
