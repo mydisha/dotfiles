@@ -3,14 +3,14 @@ HakaseFal dotfiles
 
 ### My Screens
 
-**xMonad** : nyanCode
+**nyanCode** : Xmonad, i3-gaps
 ![nyanCode Screenshot](https://raw.githubusercontent.com/HakaseFal/dotfiles/master/Screenshots/nyanCode.png)
 
-**xMonad** : kuromeBlood
+**kuromeBlood** : Xmonad
 ![kuromeBlood Screenshot](https://raw.githubusercontent.com/HakaseFal/dotfiles/master/Screenshots/kuromeBlood.png)
 
-**xMonad** : colorNana
-![colorNana Screenshot](https://raw.githubusercontent.com/HakaseFal/dotfiles/master/Screenshots/colorNana.png)
-
-**xMonad** : ExoNixi
+**ExoNixi** : Xmonad
 ![ExoNixi Screenshot](https://raw.githubusercontent.com/HakaseFal/dotfiles/master/Screenshots/ExoNixi.jpg)
+
+**colorNana** : Xmonad
+![colorNana Screenshot](https://raw.githubusercontent.com/HakaseFal/dotfiles/master/Screenshots/colorNana.png)
