@@ -1,4 +1,4 @@
-xrdb ~/.xresources.d/xmonad.Xresources &
+xrdb ~/.Xdefaults &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore &
 mpd &
