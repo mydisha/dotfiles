@@ -6,5 +6,5 @@ total_run_times 0
 use_spacer none
 
 TEXT
-^bg(\#1199aa)    ^i(/home/diarifa/.xmonad/assets/xbm/uptime.xbm)   $uptime_short    ^bg()\
-^bg(\#1188aa)    ^i(/home/diarifa/.xmonad/assets/xbm/music.xbm)   ${exec sh /home/diarifa/.xmonad/assets/bin/mpc.sh}    ^bg()\
+^bg(\#1199aa)    ^i(/home/diarifa/.i3/assets/xbm/uptime.xbm)   $uptime_short    ^bg()\
+^bg(\#1188aa)    ^i(/home/diarifa/.i3/assets/xbm/music.xbm)   ${exec sh /home/diarifa/.i3/assets/bin/mpc.sh}    ^bg()\

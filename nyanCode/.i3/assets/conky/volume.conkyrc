@@ -6,4 +6,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-^bg(\#1177aa)    ^i(/home/diarifa/.xmonad/assets/xbm/vol.xbm)   ${exec sh /home/diarifa/.xmonad/assets/bin/volume.sh}   ^bg()\
+^bg(\#1177aa)    ^i(/home/diarifa/.i3/assets/xbm/vol.xbm)   ${exec sh /home/diarifa/.i3/assets/bin/volume.sh}   ^bg()\

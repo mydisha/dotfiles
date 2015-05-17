@@ -11,6 +11,6 @@ PosX_info=`expr $ScreenWidth - $WidthPanelInfo - $WidthPanelVolume`
 PosX_clock=`expr $ScreenWidth / 2 - $(expr $WidthPanelClock / 2)`
 PosX_volume=`expr $ScreenWidth - $WidthPanelVolume`
 
-conky -c ~/.xmonad/assets/conky/info.conkyrc | dzen2 -p -ta r -e 'button3=' -fn 'Droid Sans Fallback-8:bold' -fg $fg -bg $bg -h 24 -w $WidthPanelInfo -x $PosX_info &
-conky -c ~/.xmonad/assets/conky/clock.conkyrc | dzen2 -p -ta c -e 'button3=' -fn 'Droid Sans Fallback-8:bold' -fg $fg -bg $bg -h 24 -w $WidthPanelClock -x $PosX_clock &
-conky -c ~/.xmonad/assets/conky/volume.conkyrc | dzen2 -p -ta r -e 'button3=' -fn 'Droid Sans Fallback-8:bold' -fg $fg -bg $bg_volume -h 24 -w $WidthPanelVolume -x $PosX_volume &
+conky -c ~/.i3/assets/conky/info.conkyrc | dzen2 -p -ta r -e 'button3=' -fn 'Droid Sans Fallback-8:bold' -fg $fg -bg $bg -h 24 -w $WidthPanelInfo -x $PosX_info &
+conky -c ~/.i3/assets/conky/clock.conkyrc | dzen2 -p -ta c -e 'button3=' -fn 'Droid Sans Fallback-8:bold' -fg $fg -bg $bg -h 24 -w $WidthPanelClock -x $PosX_clock &
+conky -c ~/.i3/assets/conky/volume.conkyrc | dzen2 -p -ta r -e 'button3=' -fn 'Droid Sans Fallback-8:bold' -fg $fg -bg $bg_volume -h 24 -w $WidthPanelVolume -x $PosX_volume &
