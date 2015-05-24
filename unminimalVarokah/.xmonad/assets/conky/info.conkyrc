@@ -1,0 +1,11 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 0.3
+total_run_times 0
+use_spacer none
+
+TEXT
+    ^i(/home/diarifa/.xmonad/assets/xbm/music.xbm)   ${exec sh /home/diarifa/.xmonad/assets/bin/mpc.sh}    \
+^fg(\#C12B4D)^i(/home/diarifa/.xmonad/assets/xbm/mr2.xbm)^fg()^bg(\#C12B4D)\
+  ^i(/home/diarifa/.xmonad/assets/xbm/clock.xbm)   ${time %b %d,  %I:%M %p}   \
