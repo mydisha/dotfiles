@@ -1,4 +1,4 @@
-HakaseFal dotfiles
+Ichi-chan dotfiles
 =============
 
 ### My Screens
