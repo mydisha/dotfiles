@@ -1,5 +1,6 @@
 Ichi-chan dotfiles
 =============
+Also check it out : https://github.com/codeharuka/Stick-xfwm4
 
 ### My Screens
 
